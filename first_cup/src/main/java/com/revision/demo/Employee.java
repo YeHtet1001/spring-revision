@@ -9,10 +9,19 @@ public class Employee {
 
     public Employee(){}
 
+    public Employee(int id, String name, int age, String position) {
+
+        this.id = id;
+        this.name = name;
+        this.age = age;
+        this.position = position;
+
+    }
+
     public int getId() {
 
         return id;
-        
+
     }
 
     public void setId(int id) {
