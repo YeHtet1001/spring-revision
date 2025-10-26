@@ -1,0 +1,2 @@
+mysql -u username -pyourpassword.
+system cls => to clean in cmd of MySQL.
