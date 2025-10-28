@@ -1,2 +1,12 @@
 if you want to search dependencies, you can search in maven-repository website.
 => https://mvnrepository.com/ 
+
+spring scope
+
+-singleton(default) 
+  * A single instance of the bean is created and shared across the entire Spring container.
+  * all beans in Spring are singletons.
+  * Only one instance of the bean is created per Spring IoC container.
+
+-prototype
+ *  a new instance of the bean is created every time it is requested from the Spring container.

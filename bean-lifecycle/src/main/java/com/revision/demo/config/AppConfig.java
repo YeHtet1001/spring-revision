@@ -28,7 +28,7 @@ public class AppConfig {
 
     }
 
-    @Bean( initMethod = "customInit")
+    @Bean( initMethod = "customInit",destroyMethod = "customDestroy")
     public SpringBean1 springBean1(){
 
         return new SpringBean1();
