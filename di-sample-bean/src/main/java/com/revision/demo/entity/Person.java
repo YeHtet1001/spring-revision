@@ -10,11 +10,12 @@ public class Person {
     private String name;
     private int age;
     private Gender gender;
-    @Autowired
+    //@Autowired //Field injection is not recommended
     private Address address;
 
     public Person() {}
 
+    //Autowired not used in constructor!!!!!!!
     public Person( String name , int age, Gender gender , Address address ) {
 
         this.name = name;
@@ -66,6 +67,7 @@ public class Person {
 
     }
 
+    @Autowired
     public void setAddress(Address address) {
 
         this.address = address;
