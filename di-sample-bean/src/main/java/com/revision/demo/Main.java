@@ -33,11 +33,13 @@ public class Main {
         address.setCity("dream-city");
         address.setState("dream-state");
 
-        person.setAddress(address);
+       // person.setAddress(address);
         person.setName("Dream");
         person.setAge(22);
         person.setGender(Gender.other);
 
+        person.postConstruct();
+        person.diplayIExperties();
         System.out.println(person);
 
     }

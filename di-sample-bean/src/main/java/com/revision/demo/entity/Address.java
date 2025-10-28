@@ -49,12 +49,6 @@ public class Address {
 
     }
 
-    public void setState(String state) {
-
-        this.state = state;
-
-    }
-
     @Override
     public String toString() {
         return "Address{" +
@@ -63,4 +57,13 @@ public class Address {
                 ", state='" + state + '\'' +
                 '}';
     }
+
+    public void setState(String state) {
+
+        this.state = state;
+
+    }
+
+
+
 }

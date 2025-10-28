@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Configuration;
 import java.time.Period;
 
 @Configuration
-@ComponentScan(basePackages = "com.revision.demo.entity")//need to add java-config
+@ComponentScan(basePackages = "com.revision.demo")//need to add java-config
 public class AppConfig {
     //annotation config
 //    @Bean
