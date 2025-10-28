@@ -1,6 +1,8 @@
 package com.revision.demo.history;
 
-public class RescuingThePrincessQuest {
+import com.revision.demo.questInterface.Quest;
+
+public class RescuingThePrincessQuest implements Quest {
 
     public void goQuest(){
 
