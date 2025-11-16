@@ -6,8 +6,7 @@ import lombok.Getter;
 import lombok.Setter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-
-import static com.revision.demo.annotation.Quest.QuestType.Kill_Dragon;
+import static com.revision.demo.annotation.Quest.QuestType.*;
 
 @Component
 @Getter
@@ -16,7 +15,7 @@ public class Knight {
 
 
     @Autowired
-    @Quest(questType = Kill_Dragon)
+    @Quest(questType = Sing)
     private QuestType quest;
 
     public void goQuest() {

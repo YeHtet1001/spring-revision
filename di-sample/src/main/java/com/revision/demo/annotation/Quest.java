@@ -15,7 +15,7 @@ public @interface Quest {
 
     enum QuestType {
 
-        Kill_Dragon, Rescuing
+        Kill_Dragon, Rescuing,Sing
 
     }
 
