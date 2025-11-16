@@ -1,20 +1,25 @@
 package com.revision.demo.history;
 
-import com.revision.demo.questInterface.Quest;
+import com.revision.demo.annotation.Quest;
+import com.revision.demo.questInterface.QuestType;
+import lombok.Getter;
+import lombok.Setter;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+import static com.revision.demo.annotation.Quest.QuestType.Kill_Dragon;
+
+@Component
+@Getter
+@Setter
 public class Knight {
 
-    private Quest quest;
 
-    public void setQuest(Quest quest) {
-        this.quest = quest;
-    }
+    @Autowired
+    @Quest(questType = Kill_Dragon)
+    private QuestType quest;
 
-    public Quest getQuest() {
-        return quest;
-    }
-
-    public void goQuest(){
+    public void goQuest() {
 
         quest.goQuest();
 
